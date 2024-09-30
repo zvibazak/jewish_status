@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loading indicator -->
+    <div id="loading" class="loading">Loading...</div>
+
+    <div class="status-container">
+        <button class="nav-arrow left-arrow" onclick="prevStatus()">&#9664;</button>
+        <div class="status-content">
+            <p id="statusText" class="status-text"></p>
+            <p id="statusSource" class="status-source"></p>
+        </div>
+        <button class="nav-arrow right-arrow" onclick="nextStatus()">&#9654;</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
